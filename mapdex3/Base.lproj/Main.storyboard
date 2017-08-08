@@ -21,47 +21,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mO7-fr-a7k">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mO7-fr-a7k">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.72156862745098038" green="0.78823529411764703" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="aDb-tO-WLB"/>
+                                </constraints>
                             </view>
                             <searchBar verifyAmbiguity="off" contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kws-sO-kVF">
-                                <rect key="frame" x="0.0" y="65" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="649" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="J5A-fP-WUg"/>
+                                </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="VLZ-I8-Fp6">
-                                <rect key="frame" x="0.0" y="109" width="375" height="558"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="VLZ-I8-Fp6">
+                                <rect key="frame" x="0.0" y="65" width="375" height="602"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
                             <collectionView verifyAmbiguity="off" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2S0-8C-iEj">
                                 <rect key="frame" x="12" y="331" width="351" height="316"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rWz-FR-6ht">
-                                    <size key="itemSize" width="162" height="81"/>
+                                    <size key="itemSize" width="105" height="106"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MapCell" id="oBI-wB-io5" customClass="MapCell" customModule="mapdex3" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="162" height="81"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="105" height="106"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="162" height="81"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="105" height="106"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="XlG-Yl-24T">
-                                                    <rect key="frame" x="0.0" y="0.0" width="162" height="81"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="105" height="81"/>
                                                     <color key="backgroundColor" white="1" alpha="0.79526969178082196" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="81" id="cgE-rj-3cY"/>
+                                                        <constraint firstAttribute="height" constant="81" id="xeA-nt-IQb"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Short-Term Parking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYh-1c-eEI">
-                                                    <rect key="frame" x="0.0" y="60" width="162" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="short" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYh-1c-eEI">
+                                                    <rect key="frame" x="0.0" y="81" width="105" height="25"/>
                                                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -70,10 +73,13 @@
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="XlG-Yl-24T" firstAttribute="top" secondItem="oBI-wB-io5" secondAttribute="top" id="7WW-aC-4Ye"/>
-                                            <constraint firstAttribute="bottom" secondItem="XlG-Yl-24T" secondAttribute="bottom" id="EBQ-Pd-maS"/>
-                                            <constraint firstItem="XlG-Yl-24T" firstAttribute="leading" secondItem="oBI-wB-io5" secondAttribute="leading" id="jOd-Ib-zbn"/>
-                                            <constraint firstAttribute="trailing" secondItem="XlG-Yl-24T" secondAttribute="trailing" id="r3M-l2-4dN"/>
+                                            <constraint firstItem="XlG-Yl-24T" firstAttribute="leading" secondItem="oBI-wB-io5" secondAttribute="leading" id="5VV-RV-NXo"/>
+                                            <constraint firstAttribute="trailing" secondItem="XlG-Yl-24T" secondAttribute="trailing" id="85c-Ff-UbS"/>
+                                            <constraint firstAttribute="trailing" secondItem="hYh-1c-eEI" secondAttribute="trailing" id="Bf0-LJ-qJk"/>
+                                            <constraint firstAttribute="bottom" secondItem="hYh-1c-eEI" secondAttribute="bottom" id="QRo-pK-dyL"/>
+                                            <constraint firstItem="hYh-1c-eEI" firstAttribute="leading" secondItem="oBI-wB-io5" secondAttribute="leading" id="R5y-9t-7VY"/>
+                                            <constraint firstItem="XlG-Yl-24T" firstAttribute="top" secondItem="oBI-wB-io5" secondAttribute="top" id="WVq-L3-JHJ"/>
+                                            <constraint firstItem="hYh-1c-eEI" firstAttribute="top" secondItem="XlG-Yl-24T" secondAttribute="bottom" id="Zx0-kt-M3L"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="nameLbl" destination="hYh-1c-eEI" id="g4M-yX-CLk"/>
@@ -82,26 +88,41 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <imageView verifyAmbiguity="off" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="3dMap" translatesAutoresizingMaskIntoConstraints="NO" id="4wX-GP-zWY">
+                            <imageView verifyAmbiguity="off" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pentagonMap" translatesAutoresizingMaskIntoConstraints="NO" id="4wX-GP-zWY">
                                 <rect key="frame" x="0.0" y="109" width="375" height="214"/>
                                 <color key="backgroundColor" red="0.71976470947265625" green="0.79900527000427246" blue="0.84316807985305786" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="214" id="Dpt-A5-N2p"/>
-                                    <constraint firstAttribute="width" constant="375" id="l2O-H7-xzK"/>
+                                    <constraint firstAttribute="width" constant="375" id="bJJ-MJ-yAW"/>
+                                    <constraint firstAttribute="height" constant="214" id="dYq-cQ-4EK"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="4wX-GP-zWY" firstAttribute="top" secondItem="kws-sO-kVF" secondAttribute="bottom" id="2go-af-cTc"/>
-                            <constraint firstItem="2S0-8C-iEj" firstAttribute="top" secondItem="4wX-GP-zWY" secondAttribute="bottom" constant="8" id="95g-Zy-hLE"/>
-                            <constraint firstAttribute="trailing" secondItem="4wX-GP-zWY" secondAttribute="trailing" id="IXS-Cb-kvG"/>
-                            <constraint firstItem="2S0-8C-iEj" firstAttribute="top" secondItem="kws-sO-kVF" secondAttribute="bottom" constant="222" id="l01-bF-yLh"/>
-                            <constraint firstItem="4wX-GP-zWY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lOF-7X-xuz"/>
+                            <constraint firstItem="mO7-fr-a7k" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7av-gV-buX"/>
+                            <constraint firstItem="VLZ-I8-Fp6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DRl-qI-U6j"/>
+                            <constraint firstAttribute="trailing" secondItem="2S0-8C-iEj" secondAttribute="trailing" constant="20" id="EgO-Uo-JWN"/>
+                            <constraint firstAttribute="trailing" secondItem="4wX-GP-zWY" secondAttribute="trailing" id="Fo6-Rg-jRb"/>
+                            <constraint firstItem="kws-sO-kVF" firstAttribute="top" secondItem="2S0-8C-iEj" secondAttribute="bottom" id="IMd-MU-D8t"/>
+                            <constraint firstItem="2S0-8C-iEj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Lbk-VX-3cb"/>
+                            <constraint firstAttribute="trailing" secondItem="VLZ-I8-Fp6" secondAttribute="trailing" id="Lh7-8E-T1p"/>
+                            <constraint firstItem="4wX-GP-zWY" firstAttribute="top" secondItem="mO7-fr-a7k" secondAttribute="bottom" constant="44" id="MS3-81-6aa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VLZ-I8-Fp6" secondAttribute="bottom" id="Q8m-5r-KVz"/>
+                            <constraint firstItem="4wX-GP-zWY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Rqn-df-sNz"/>
+                            <constraint firstItem="kws-sO-kVF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TaO-xq-mpf"/>
+                            <constraint firstItem="2S0-8C-iEj" firstAttribute="top" secondItem="4wX-GP-zWY" secondAttribute="bottom" constant="344" id="UHD-xP-zah"/>
+                            <constraint firstAttribute="trailing" secondItem="kws-sO-kVF" secondAttribute="trailing" id="VcN-2n-AB1"/>
+                            <constraint firstItem="mO7-fr-a7k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ko7-8T-WVW"/>
+                            <constraint firstAttribute="trailing" secondItem="mO7-fr-a7k" secondAttribute="trailing" id="q2q-z4-FF8"/>
                             <constraint firstAttribute="trailing" secondItem="2S0-8C-iEj" secondAttribute="trailing" constant="12" id="qAG-4O-9K0"/>
+                            <constraint firstItem="VLZ-I8-Fp6" firstAttribute="top" secondItem="mO7-fr-a7k" secondAttribute="bottom" id="swm-B8-YWa"/>
                             <constraint firstItem="2S0-8C-iEj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="12" id="yKa-21-0V9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="PentagonMap" destination="4wX-GP-zWY" id="4it-lz-XI6"/>
+                        <outlet property="collection" destination="2S0-8C-iEj" id="nqL-oa-9Nm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,7 +131,7 @@
     </scenes>
     <resources>
         <image name="1" width="1024" height="768"/>
-        <image name="3dMap" width="1920" height="1390"/>
         <image name="bg" width="922" height="613"/>
+        <image name="pentagonMap" width="1920" height="1390"/>
     </resources>
 </document>
