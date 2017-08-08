@@ -45,7 +45,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="oBI-wB-io5">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MapCell" id="oBI-wB-io5" customClass="MapCell" customModule="mapdex3" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="162" height="81"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -75,10 +75,14 @@
                                             <constraint firstItem="XlG-Yl-24T" firstAttribute="leading" secondItem="oBI-wB-io5" secondAttribute="leading" id="jOd-Ib-zbn"/>
                                             <constraint firstAttribute="trailing" secondItem="XlG-Yl-24T" secondAttribute="trailing" id="r3M-l2-4dN"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="nameLbl" destination="hYh-1c-eEI" id="g4M-yX-CLk"/>
+                                            <outlet property="thumbImg" destination="XlG-Yl-24T" id="Rgt-vk-csy"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <imageView verifyAmbiguity="off" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="4wX-GP-zWY">
+                            <imageView verifyAmbiguity="off" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="3dMap" translatesAutoresizingMaskIntoConstraints="NO" id="4wX-GP-zWY">
                                 <rect key="frame" x="0.0" y="109" width="375" height="214"/>
                                 <color key="backgroundColor" red="0.71976470947265625" green="0.79900527000427246" blue="0.84316807985305786" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -106,7 +110,7 @@
     </scenes>
     <resources>
         <image name="1" width="1024" height="768"/>
+        <image name="3dMap" width="1920" height="1390"/>
         <image name="bg" width="922" height="613"/>
-        <image name="map" width="1920" height="1390"/>
     </resources>
 </document>

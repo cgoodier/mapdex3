@@ -14,6 +14,7 @@
 		C61E4BE31F3A058D006FEE93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61E4BE21F3A058D006FEE93 /* Assets.xcassets */; };
 		C61E4BE61F3A058D006FEE93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61E4BE41F3A058D006FEE93 /* LaunchScreen.storyboard */; };
 		C61E4BEE1F3A0ED5006FEE93 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = C61E4BED1F3A0ED5006FEE93 /* GoogleService-Info-2.plist */; };
+		C6BEDBC41F3A576B00E3CF8F /* MapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEDBC31F3A576B00E3CF8F /* MapCell.swift */; };
 		C6F502F81F3A13B500BD8856 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F502F71F3A13B500BD8856 /* Map.swift */; };
 		C6F502FA1F3A17EE00BD8856 /* Screen Shot 2017-08-08 at 12.01.12 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = C6F502F91F3A17ED00BD8856 /* Screen Shot 2017-08-08 at 12.01.12 PM.png */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 		C61E4BE51F3A058D006FEE93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C61E4BE71F3A058D006FEE93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C61E4BED1F3A0ED5006FEE93 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
+		C6BEDBC31F3A576B00E3CF8F /* MapCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapCell.swift; sourceTree = "<group>"; };
 		C6F502F71F3A13B500BD8856 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		C6F502F91F3A17ED00BD8856 /* Screen Shot 2017-08-08 at 12.01.12 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2017-08-08 at 12.01.12 PM.png"; sourceTree = "<group>"; };
 		F69AD3F7FA182CF1C6B46A03 /* Pods-mapdex3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapdex3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mapdex3/Pods-mapdex3.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		C6BEDBC21F3A556700E3CF8F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C6BEDBC31F3A576B00E3CF8F /* MapCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			files = (
 				C61E4BDE1F3A058D006FEE93 /* ViewController.swift in Sources */,
 				C6F502F81F3A13B500BD8856 /* Map.swift in Sources */,
+				C6BEDBC41F3A576B00E3CF8F /* MapCell.swift in Sources */,
 				C61E4BDC1F3A058D006FEE93 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
